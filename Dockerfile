@@ -14,6 +14,9 @@ RUN npm install
 # Copy app source
 COPY . .
 
+ARG NAME
+ENV ENV_NAME=${NAME}
+
 # Bind the port that the image will run on
 EXPOSE 8080
 

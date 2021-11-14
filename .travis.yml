@@ -16,7 +16,7 @@ before_script:
 script:
   - echo "${NAME}"
   - docker --version # print the version for logging
-  - docker build -t simple-node --build-arg NAME=${NAME} .
+  - docker build -t simple-node --build-arg NAME .
   - docker tag simple-node tickoon/simple-node:latest
 
 after_success:

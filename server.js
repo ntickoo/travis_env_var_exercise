@@ -6,7 +6,7 @@ function sleep(ms) {
 async function main() {
   while(true) {
     console.log("Microservices rock!");
-    console.log("Favourite food is ", process.env.NAME);
+    console.log("Favourite food is ", process.env.ENV_NAME);
 
     await sleep(5000);
   }
